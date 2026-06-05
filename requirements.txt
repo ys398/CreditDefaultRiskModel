@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+joblib
+matplotlib
+openpyxl
+xlrd
+jupyter
+ucimlrepo
+pytest

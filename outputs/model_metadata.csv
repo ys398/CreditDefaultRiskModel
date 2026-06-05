@@ -1,0 +1,2 @@
+selected_by,best_ranking_model,operational_model,selected_threshold,false_negative_cost,false_positive_cost,training_rows,test_rows,random_state,fast_mode
+5-fold training CV ROC-AUC,Tuned HistGradientBoosting,Calibrated Tuned HistGradientBoosting,0.16,5.0,1.0,24000,6000,42,False

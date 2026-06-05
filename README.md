@@ -180,16 +180,3 @@ Tests:
 .\.venv\Scripts\python.exe -m pytest -q
 ```
 
-## Resume-Ready Chinese Bullets
-
-- 基于 30,000 条信用卡客户数据构建端到端违约概率模型，在 sklearn Pipeline 内完成业务特征工程、交叉验证调参及概率校准，调优模型 5 折 ROC-AUC 达 `0.7869 ± 0.0042`，独立测试集 AUC 达 `0.7821`、KS 达 `0.4312`。
-- 构建逾期频次、近期加权逾期程度、额度使用率、还款覆盖率和账单趋势等 22 个业务衍生特征，并通过 permutation importance 识别关键风险驱动因素。
-- 基于训练集 out-of-fold 预测和非对称业务成本优化决策阈值，将独立测试集违约客户召回率由 `36.62%` 提升至 `74.91%`。
-- 建立客户风险分层与 Lift/Capture 报告，最高风险 10% 客户覆盖 `31.95%` 的违约客户、Lift 达 `3.20x`，最高风险层实际违约率达 `77.00%`。
-
-## Limitations and Governance
-
-- The public dataset is cross-sectional; true out-of-time validation is not possible.
-- The cost ratio used for threshold selection is illustrative and must be replaced by institution-specific economics.
-- Real deployment requires fairness testing, stability monitoring, challenger models, governance approval, and compliance review.
-- This project is for educational and portfolio purposes and must not be used directly for real credit decisions.
